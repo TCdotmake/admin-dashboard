@@ -2,22 +2,85 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  --sidebar-bg: #0f172a;
+  --header-bg: #e2e8f0;
+  --logo: #f43f5e;
+  --sidebar-text: #94a3b8;
+  --header-height: 100px;
+}
+
 .mainContainer {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 80px auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: var(--header-height) auto;
 }
 
 .sideBar {
-  background: rgb(255, 112, 112);
+  background: var(--sidebar-bg);
   grid-area: 1/1/3/2;
+  display: grid;
+  grid-template-rows: var(--header-height) auto;
+}
+
+.logo {
+  font-family: "Alfa Slab One", cursive;
+  color: var(--logo);
+  font-size: 1.7rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.menu {
+  color: var(--sidebar-text);
+}
+
+.menuHeader {
+  justify-self: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nav {
+  width: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+}
+
+.nav ul {
+  grid-column: 2/3;
+}
+
+.nav li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+  gap: 18px;
+}
+
+.nav li i {
+  font-size: 1.3rem;
+  text-align: end;
+}
+
+.nav li span {
+  font-size: 1.3rem;
 }
 
 .header {
-  background: rgb(125, 162, 166);
+  background: var(--header-bg);
   grid-column: 2/3;
 }
+
 .mainContent {
+  background: #cbd5e1;
+
   grid-row: 2/3;
 }
