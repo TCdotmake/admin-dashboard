@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mainContainer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 80px auto;
+}
+
+.sideBar {
+  background: rgb(255, 112, 112);
+  grid-area: 1/1/3/2;
+}
+
+.header {
+  background: rgb(125, 162, 166);
+  grid-column: 2/3;
+}
+.mainContent {
+  grid-row: 2/3;
+}
