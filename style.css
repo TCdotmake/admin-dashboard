@@ -8,17 +8,17 @@
   font-size: 16px;
   --sidebar-bg: #0f172a;
   --header-bg: #f1f5f9;
+  --header-text: #0f172a;
   --logo: #f43f5e;
   --sidebar-text: #e2e8f0;
   --header-height: 100px;
   --icon-font-size: 1.8rem;
 }
 
-.mainContainer {
+.allContainer {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: var(--header-height) auto;
 }
 
 .sideBar {
@@ -82,25 +82,39 @@
 }
 
 .nav li span {
-  font-size: 1.2rem;
-  font-weight: 200;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+  min-height: 100vh;
 }
 
 .header {
   background: var(--header-bg);
-  grid-column: 2/3;
+  color: var(--header-text);
 }
 
 .mainContent {
   background: #cbd5e1;
+}
 
-  grid-row: 2/3;
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
-.searchDiv {
-  padding: 10px 0;
+
+.avatar-img {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
-.searchDiv i {
-  font-size: 1.5rem;
+.avatar span {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 /* * {

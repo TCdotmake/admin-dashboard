@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -22,7 +19,7 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <div class="mainContainer">
+    <div class="allContainer">
       <div class="sideBar">
         <div class="logo">LogoHere</div>
         <div class="menu">
@@ -47,13 +44,22 @@
           </nav>
         </div>
       </div>
-      <div class="header">
-        <div class="searchDiv">
+      <div class="mainContainer">
+        <div class="header">
           <i class="bi bi-search"></i>
           <input type="search" name="search" id="search" />
+          <i class="bi bi-bell-fill"></i>
+          <div class="avatar"><img
+            class="avatar-img"
+            src="/images/dog_100x100.jpg"
+            alt="User avatar"
+          />
+          <span>Josh Eiser</span></div>
+            
+          </div>
         </div>
+        <div class="mainContent"></div>
       </div>
-      <div class="mainContent"></div>
     </div>
   </body>
 </html>
