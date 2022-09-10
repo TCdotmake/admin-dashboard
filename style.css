@@ -6,7 +6,7 @@
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  --sidebar-bg: #0f172a;
+  --sidebar-bg: #334155;
   --sidebar-bg-2: #94a3b8;
   --header-bg: #f1f5f9;
   --header-text: #0f172a;
@@ -148,7 +148,7 @@ input[type="search"] {
 }
 
 .avatar-img {
-  width: 60px;
+  width: 50px;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
@@ -274,12 +274,13 @@ hr {
 .logo-lg {
   color: var(--sidebar-text);
   width: 100%;
+  text-transform: uppercase;
 }
 
 .logo-sm {
   width: 100%;
   font-size: 1.7rem;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 .left {
